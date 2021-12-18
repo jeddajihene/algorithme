@@ -1,0 +1,22 @@
+ALGORITHM algorithm_comparaison
+VAR
+    array_arr1 : ARRAY_OF integer[i];
+    array_arr2 : ARRAY_OF integer[j];
+    x:integer;
+BEGIN
+    FOR (i=0;i=<arr1.length-1;i++);
+    FOR(j=0;j=<arr2.length-1;j++);
+        IF (arr1[i]<>arr2[j]) THEN
+            x:=x+arr1[i];
+        END_IF
+    END_FOR
+    END_FOR
+    write(x)
+    FOR(j=0;j=<arr2.length-1;j++);
+    FOR (i=0;i=<arr1.length-1;i++);
+    IF (arr1[i]<>arr2[j]) THEN
+    x:=x+arr2[j];
+    END_IF
+    END_FOR
+    END_FOR
+END
